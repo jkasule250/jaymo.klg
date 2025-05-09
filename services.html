@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services | Local Urban Farmers</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+  <meta name="description" content="Discover the services offered by Local Urban Farmers, including organic produce, workshops, and community gardening.">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+    <!-- Navigation -->
+     <h1></h1>
+  <!-- Main Content -->
+  <main>
+
+    <section class="hero" style="text-align: center; padding: 2rem;">
+      <h1>🌿 Our Services</h1>
+      <p>We provide support, education, and fresh local produce to grow greener communities in Ilford.</p>
+    </section>
+
+    <section class="services-list" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); padding: 2rem;">
+      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
+        <h3>🌱 Organic Farming</h3>
+        <p>We cultivate fresh vegetables and herbs using eco-friendly, pesticide-free methods right here in Ilford.</p>
+      </div>
+      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
+        <h3>👨‍🏫 Community Workshops</h3>
+        <p>Attend our hands-on workshops on composting, vertical gardening, and zero-waste practices.</p>
+      </div>
+      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
+        <h3>🧺 Weekly Produce Box</h3>
+        <p>Subscribe to a seasonal box of fresh, locally grown produce delivered straight from our allotments.</p>
+      </div>
+      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
+        <h3>🤝 School & Youth Programs</h3>
+        <p>We partner with schools to teach young people about sustainability and growing their own food.</p>
+      </div>
+    </section>
+    <section id="booking" style="background-color: #f9f9f9; padding: 2rem;">
+        <h2 style="text-align: center; color: #2e7d32; font-size: 2rem;">📅 Book a Visit or Service</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 1.5rem;">
+          Interested in visiting our urban farm, attending a workshop, or subscribing to our produce box?
+          Fill in the form below and we’ll get back to you!
+        </p>
+      
+        <form id="booking-form" style="max-width: 600px; margin: 0 auto; display: grid; gap: 1rem;">
+          <input type="text" name="name" placeholder="Your Full Name" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+          <input type="email" name="email" placeholder="Your Email Address" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+          
+          <select name="service" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
+            <option value="">Select a Service</option>
+            <option value="Visit the farm">Visit the farm</option>
+            <option value="Join a workshop">Join a workshop</option>
+            <option value="Subscribe to produce box">Subscribe to produce box</option>
+          </select>
+      
+          <textarea name="message" rows="4" placeholder="Any special requests?" style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+      
+          <button type="submit" style="padding: 0.75rem; background-color: #2e7d32; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            Submit Request
+          </button>
+        </form>
+      
+        <div id="confirmation-message" style="display: none; text-align: center; margin-top: 1rem; color: #2e7d32;">
+          ✅ Thank you! We'll be in touch soon.
+        </div>
+      </section>
+      
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 1rem; background-color: #2e7d32; color: white;">
+    <p>&copy; 2025 Local Urban Farmers. All rights reserved.</p>
+  </footer>
+  <form id="booking-form">
+    <!-- ...inputs remain the same... -->
+  </form>
+  
+  <script>
+    const form = document.getElementById("booking-form");
+    const confirmation = document.getElementById("confirmation-message");
+  
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        service: form.service.value,
+        message: form.message.value
+      };
+  
+      fetch("PASTE_YOUR_WEB_APP_URL_HEREhttps://script.google.com/macros/s/AKfycbw5xt3e9aG1h5zGARwaQsZHCC3pNh0AFJyk5mURXuq-ovpVSxkbM_CxuQAZc122yXwj/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" }
+      })
+      .then(res => res.json())
+      .then(response => {
+        confirmation.style.display = "block";
+        form.reset();
+      })
+      .catch(err => {
+        alert("Something went wrong. Please try again.");
+      });
+    });
+  </script>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+  </script>
+</body>
+</html>

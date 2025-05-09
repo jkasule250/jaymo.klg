@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery | Local Urban Farmers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Browse photos from our urban farm in Ilford — community gardening, fresh produce, and local events.">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+    <div id="nav-placeholder"></div>
+    <h1></h1>
+  <!-- Main Gallery Section -->
+  <main>
+    <section style="text-align: center; padding: 2rem;">
+      <h1>📸 Our Urban Farm Gallery</h1>
+      <p>Moments from our gardens, harvests, workshops, and the local community.</p>
+    </section>
+
+   <!-- Lightbox Styles, Animation & Script -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Navigation -->
+
+
+<!-- Gallery Section with Intro -->
+<section style="text-align: center; padding: 2rem;">
+  <h2 data-aos="fade-down">🌱 Our Story Through Pictures</h2>
+  <p data-aos="fade-up" style="max-width: 600px; margin: auto;">
+    Each image tells a part of our journey — from planting seeds to building a stronger community.
+    Explore moments from our farm, local events, and daily life at Local Urban Farmers.
+  </p>
+</section>
+
+<!-- Gallery Grid -->
+<section class="gallery-grid">
+  <a href="images/farm1.jpg" data-lightbox="urban-farm" data-title="Farmers working in urban garden">
+    <img src="images/farm1.jpg" alt="Farmers working in urban garden" data-aos="fade-up" />
+  </a>
+  <a href="images/produce1.jpg" data-lightbox="urban-farm" data-title="Fresh harvested produce">
+    <img src="images/produce1.jpg" alt="Fresh harvested produce" data-aos="fade-up" />
+  </a>
+  <a href="images/community1.jpg" data-lightbox="urban-farm" data-title="Volunteers at the farm">
+    <img src="images/community1.jpg" alt="Volunteers at the farm" data-aos="fade-up" />
+  </a>
+  <a href="images/workshop1.jpg" data-lightbox="urban-farm" data-title="Gardening workshop in progress">
+    <img src="images/workshop1.jpg" alt="Gardening workshop in progress" data-aos="fade-up" />
+  </a>
+  <a href="images/kids1.jpg" data-lightbox="urban-farm" data-title="School visit to the farm">
+    <img src="images/kids1.jpg" alt="School visit to the farm" data-aos="fade-up" />
+  </a>
+  <a href="images/market1.jpg" data-lightbox="urban-farm" data-title="Produce market stand">
+    <img src="images/market1.jpg" alt="Produce market stand" data-aos="fade-up" />
+  </a>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 1rem; background-color: #2e7d32; color: white;">
+    <p>&copy; 2025 Local Urban Farmers. All rights reserved.</p>
+  </footer>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+  </script>
+</body>
+</html>
