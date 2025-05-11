@@ -18,14 +18,14 @@
   .logo {
     display: flex;
     flex-direction: column; /* Stack the logo and tagline vertically */
-    align-items: center; /* Center-align the content */
-    justify-content: center;
-    text-align: center;
+    align-items: left; /* Center-align the content */
+    justify-content: left;
+    text-align: left;
     margin-bottom: 10px;
   }
   
   .logo-icon {
-    font-size: 3rem; /* Adjust size of the icon */
+    font-size: 1%; /* Adjust size of the icon */
     margin-bottom: 5px; /* Add spacing below the icon */
   }
   
