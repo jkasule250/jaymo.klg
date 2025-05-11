@@ -2,40 +2,43 @@
 * html {
     scroll-behavior: smooth;
   }
-  nav ul {
-    flex-direction: column;
-    display: none;
+  .navbar {
+    background-color: #22c55e;
+    padding: 10px 20px;
   }
-  nav ul.show {
+  
+  .nav-container {
+    display:block ;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
     display: flex;
-  }
-  /* Reset & Base Styles */
-  * {
+    gap: 20px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  .logo {
-    display: flex;
-    flex-direction: column; /* Stack the logo and tagline vertically */
-    align-items: left; /* Center-align the content */
-    justify-content: left;
-    text-align: left;
-    margin-bottom: 10px;
   }
   
-  .logo-icon {
-    font-size: 1%; /* Adjust size of the icon */
-    margin-bottom: 5px; /* Add spacing below the icon */
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
   
-  .logo-text {
-    font-family: 'Georgia', serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #2e7d32;
-    letter-spacing: 1px;
+  .nav-links li a:hover {
+    background-color: #15803d;
+    color: white;
   }
+  
   
   .tagline {
     text-align: center; /* Center-align the tagline */
