@@ -14,11 +14,12 @@
     </ul>
   </div>
 </nav>
+<div id="nav-placeholder"></div>
 <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      })
-      .catch(error => console.error("Error loading navigation:", error));
-  </script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading navigation:", error));
+</script>
