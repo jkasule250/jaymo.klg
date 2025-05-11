@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Local Urban Farmers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+  <header>
+    <h1>Privacy Policy</h1>
+  </header>
+
+  <main>
+    <section>
+      <p><strong>Effective Date:</strong> May 11, 2025</p>
+
+      <h2>Who We Are</h2>
+      <p>Local Urban Farmers is a grassroots initiative based in Ilford, UK. We aim to connect communities through urban agriculture, education, and local produce.</p>
+
+      <h2>Information We Collect</h2>
+      <p>We collect only necessary personal data, including:</p>
+      <ul>
+        <li>Name and email address (e.g., via contact forms or newsletters)</li>
+        <li>Messages or inquiries sent through our forms</li>
+        <li>Browser cookies (non-personal usage statistics)</li>
+      </ul>
+
+      <h2>Legal Basis for Processing (GDPR)</h2>
+      <p>Under the General Data Protection Regulation (GDPR), we rely on the following legal bases:</p>
+      <ul>
+        <li><strong>Consent:</strong> You voluntarily provide data via our forms.</li>
+        <li><strong>Legitimate interests:</strong> To improve site usability and respond to your queries.</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To respond to your messages or inquiries</li>
+        <li>To send newsletters or community updates (if opted in)</li>
+        <li>To analyze anonymous visitor data and improve our website</li>
+      </ul>
+
+      <h2>Data Sharing</h2>
+      <p>We do not sell or share your personal data with third parties. We use secure services like Google Sheets and Google Forms to store submissions.</p>
+
+      <h2>Your Data Protection Rights</h2>
+      <p>As a user under GDPR, you have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request corrections to inaccurate data</li>
+        <li>Request deletion of your data ("right to be forgotten")</li>
+        <li>Withdraw consent at any time</li>
+        <li>Lodge a complaint with the ICO (Information Commissioner’s Office)</li>
+      </ul>
+
+      <h2>Cookies</h2>
+      <p>Our website uses cookies for basic functionality and anonymous analytics. You will be asked to consent to cookies on your first visit. You can also manage cookies through your browser settings.</p>
+
+      <h2>Data Retention</h2>
+      <p>We only retain personal data for as long as needed to fulfill the purpose it was collected for (e.g., answering an inquiry or sending updates).</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this policy or want to exercise your rights, email us at:
+        <a href="mailto:localurbanfarmer1@gmail.com">localurbanfarmer1@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Local Urban Farmers. All rights reserved.</p>
+  </footer>
+    <script>
+        fetch("nav.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading navigation:", error));
+        </script>
+</body>
+</html>
