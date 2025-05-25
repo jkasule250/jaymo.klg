@@ -4,228 +4,175 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gallery | Local Urban Farmers</title>
+  <meta name="description" content="Explore our gallery showcasing moments from our urban farm, including community gardening, fresh produce, workshops, and local events." />
+  <meta name="keywords" content="urban farming, gallery, community gardening, fresh produce, workshops, local events" />
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!--  Viewport meta tag for responsiveness -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Your custom stylesheet (after Bootstrap) -->
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Browse photos from our urban farm in Ilford — community gardening, fresh produce, and local events.">
+
+  <!-- Lightbox and AOS Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
   <style>
+    /* Gallery Grid */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+      gap: 20px;
       padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .gallery-grid img {
       width: 100%;
       height: auto;
       border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
 
     .gallery-grid img:hover {
       transform: scale(1.05);
     }
+
+    /* Section Styling */
+    section {
+      padding: 2rem 1rem;
+    }
+
+    section h1, section h2 {
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      color: #555;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Testimonial Section */
+    .testimonials {
+      background: #f9f9f9;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin: 1rem auto;
+      max-width: 600px;
+      font-style: italic;
+      color: #555;
+    }
+
+    .testimonial h4 {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #4caf50;
+    }
   </style>
 </head>
 <body>
+  <!-- Navigation Placeholder -->
+  <div id="nav-placeholder"></div>
 
-  <!-- Navigation -->
-    <div id="nav-placeholder"></div>
-    <h1></h1>
-  <!-- Main Gallery Section -->
-  <main>
-    <section style="text-align: center; padding: 2rem;">
-      <h1>📸 Our Urban Farm Gallery</h1>
-      <p>Moments from our gardens, harvests, workshops, and the local community.</p>
-    </section>
+  <!-- Hero Section -->
+  <header class="hero py-5 text-white text-center" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/gallery-bg.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h1 class="display-4">📸 Our Urban Farm Gallery</h1>
+      <p class="lead">Discover the beauty of urban farming through our curated gallery of moments.</p>
+    </div>
+  </header>
 
-   <!-- Lightbox Styles, Animation & Script -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-<style>
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .gallery-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  .gallery-grid img:hover {
-    transform: scale(1.05);
-  }
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!-- Navigation -->
+  <!-- Gallery Intro Section -->
+  <section>
+    <h2 data-aos="fade-down">🌱 Our Story Through Pictures</h2>
+    <p data-aos="fade-up">
+      Each image tells a part of our journey — from planting seeds to building a stronger community.
+      Explore moments from our farm, local events, and daily life at Local Urban Farmers.
+    </p>
+  </section>
 
+  <!-- Gallery Grid -->
+  <section class="gallery-grid">
+    <a href="Image/IMG_1233.jpg" data-lightbox="urban-farm" data-title="Farmers working in urban garden">
+      <img src="Image/IMG_1233.jpg" alt="Farmers working in urban garden" data-aos="fade-up" />
+    </a>
+    <a href="Image/IMG_6669.JPG" data-lightbox="urban-farm" data-title="Fresh harvested produce">
+      <img src="Image/IMG_6669.JPG" alt="Fresh harvested produce" data-aos="fade-up" />
+    </a>
+    <a href="Image/IMG_6686.JPG" data-lightbox="urban-farm" data-title="Volunteers at the farm">
+      <img src="Image/IMG_6686.JPG" alt="Volunteers at the farm" data-aos="fade-up" />
+    </a>
+    <a href="Image/IMG_6666.JPG" data-lightbox="urban-farm" data-title="Gardening workshop in progress">
+      <img src="Image/IMG_6666.JPG" alt="Gardening workshop in progress" data-aos="fade-up" />
+    </a>
+    <a href="Image/IMG_6681.JPG" data-lightbox="urban-farm" data-title="School visit to the farm">
+      <img src="Image/IMG_6681.JPG" alt="School visit to the farm" data-aos="fade-up" />
+    </a>
+    <a href="Image/IMG_6691.JPG" data-lightbox="urban-farm" data-title="Produce market stand">
+      <img src="Image/IMG_6691.JPG" alt="Produce market stand" data-aos="fade-up" />
+    </a>
+    <a href="Image/IMG_6684.JPG" data-lightbox="urban-farm" data-title="Community gardening event">
+      <img src="Image/IMG_6684.JPG" alt="Community gardening event" data-aos="fade-up" />
+    </a>
+  </section>
 
-<!-- Gallery Section with Intro -->
-<section style="text-align: center; padding: 2rem;">
-  <h2 data-aos="fade-down">🌱 Our Story Through Pictures</h2>
-  <p data-aos="fade-up" style="max-width: 600px; margin: auto;">
-    Each image tells a part of our journey — from planting seeds to building a stronger community.
-    Explore moments from our farm, local events, and daily life at Local Urban Farmers.
-  </p>
-</section>
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>🌟 What Our Community Says</h2>
+    <div class="testimonial" data-aos="fade-up">
+      <p>"The Local Urban Farmers gallery inspires me to start my own garden. The photos capture the essence of community and sustainability."</p>
+      <h4>- Sarah, Community Member</h4>
+    </div>
+    <div class="testimonial" data-aos="fade-up">
+      <p>"Seeing the vibrant produce and happy faces in the gallery reminds me of the importance of local farming."</p>
+      <h4>- James, Workshop Participant</h4>
+    </div>
+  </section>
 
-<!-- Gallery Grid -->
-<section class="gallery-grid">
-  <a href="Image/IMG_1233.jpg" data-lightbox="urban-farm" data-title="Farmers working in urban garden">
-    <img src="Image/IMG_1233.jpg" alt="Farmers working in urban garden" data-aos="fade-up" />
-  </a>
-  <a href="Image/IMG_6669.JPG" data-lightbox="urban-farm" data-title="Fresh harvested produce">
-    <img src="Image/IMG_6669.JPG" alt="Fresh harvested produce" data-aos="fade-up" />
-  </a>
-  <a href="Image/IMG_6686.JPG" data-lightbox="urban-farm" data-title="Volunteers at the farm">
-    <img src="Image/IMG_6686.JPG" alt="Volunteers at the farm" data-aos="fade-up" />
-  </a>
-  <a href="Image/IMG_6666.JPG" data-lightbox="urban-farm" data-title="Gardening workshop in progress">
-    <img src="Image/IMG_6666.JPG" alt="Gardening workshop in progress" data-aos="fade-up" />
-  </a>
-  <a href="Image/IMG_6681.JPG" data-lightbox="urban-farm" data-title="School visit to the farm">
-    <img src="Image/IMG_6681.JPG" alt="School visit to the farm" data-aos="fade-up" />
-  </a>
-  <a href="Image/IMG_6691.JPG" data-lightbox="urban-farm" data-title="Produce market stand">
-    <img src="Image/IMG_6691.JPG" alt="Produce market stand" data-aos="fade-up" />
-  </a>
-  <a href="Image/IMG_6684.JPG" data-lightbox="urban-farm" data-title="Community gardening event">
-    <img src="Image/IMG_6684.JPG" alt="Community gardening event" data-aos="fade-up" />
-</section>
-
+  <!-- Footer Placeholder -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-about">
-        <h2>Local Urban Farmer</h2>
-        <p>Empowering communities through sustainable urban farming and self-care practices.</p>
-        
-      </div>
-  
-      <div class="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contactus.html">Contact</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-column">
-        <h4>Contact Us</h4>
-        <div id class="footer-socials">
-          <a href="https://www.instagram.com/local_urban_farmer"><img src="Image/Instagram-Icon--Streamline-Svg-Logos.png" alt="Instagram"></a>
-          <a href="https://www.facebook.com/profile.php?id=61574070733800"><img src="Image/Facebook--Streamline-Svg-Logos.png" alt="Facebook"></a>
-          <a href="https://youtube.com/@localurbanfarmers"><img src="Image/Youtube--Streamline-Ios-14.png" alt="YouTube"></a>
-          <a href="http://tiktok.com/@local.urban.farmers"><img src="Image/Tiktok--Streamline-Ios-14.png" alt="TikTok"></a>
-          <a href="#"><img src="Image/X-Twitter-Logo--Streamline-Flex-Remix.png" alt="Twitter"></a>
-        </div>
-  
-      <div class="footer-newsletter">
-        <h3>Newsletter</h3>
-        <form action="https://script.google.com/macros/s/AKfycbzFPxonTMdFEbtGWiYQn5UhGpR2nzVmXBPn3gVxmE2XTUT0MXSKFNOAbt88EAFEEAPD/exec" method="POST"></form>
-        <p>Subscribe to our newsletter for updates and tips.</p>
-        <input type="email" placeholder="Your email address">
-        <button>Subscribe</button>
-      </div>
-    </div>
- <!-- Cookie Consent Modal -->
-<div id="cookie-modal" class="cookie-modal">
-  <div class="cookie-box">
-    <h3>Cookie Preferences</h3>
-    <p>We use cookies to enhance your experience. You can choose which types to accept.</p>
-
-    <form id="cookie-preferences">
-      <label>
-        <input type="checkbox" name="essential" checked disabled>
-        Essential Cookies (Always active)
-      </label><br>
-
-      <label>
-        <input type="checkbox" name="analytics">
-        Analytics Cookies
-      </label><br>
-
-      <label>
-        <input type="checkbox" name="marketing">
-        Marketing Cookies
-      </label><br><br>
-
-      <button type="submit">Save Preferences</button>
-    </form>
-  </div>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('cookie-modal');
-    const preferences = localStorage.getItem('cookiePreferences');
-
-    if (!preferences) {
-      modal.style.display = 'flex';
-    }
-
-    document.getElementById('cookie-preferences').addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const selected = {
-        essential: true, // always true
-        analytics: this.analytics.checked,
-        marketing: this.marketing.checked
-      };
-
-      localStorage.setItem('cookiePreferences', JSON.stringify(selected));
-      modal.style.display = 'none';
-
-      // Optional: Initialize scripts based on preference
-      if (selected.analytics) {
-        console.log("Analytics script would be loaded.");
-      }
-      if (selected.marketing) {
-        console.log("Marketing script would be loaded.");
-      }
-    });
-  });
-</script>
-
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="termofuse.html">Terms of Use</a>
-  </div>
-
-
-    <div class="footer-bottom">
-      © 2025 Local Urban Farmers. All rights reserved.
-    </div>
+    <div id="footer-placeholder"></div>
   </footer>
- <script>
+
+  <!-- JavaScript to Load Navigation and Footer -->
+  <script>
+    // Dynamically load the navigation
     fetch("nav.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("nav-placeholder").innerHTML = data;
       })
       .catch(error => console.error("Error loading navigation:", error));
+
+    // Dynamically load the footer
+    fetch("footer.html")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to load footer.");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading footer:", error));
   </script>
-  <!--  Bootstrap JS Bundle (includes Popper for dropdowns) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Lightbox and AOS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

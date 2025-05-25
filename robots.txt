@@ -1,1 +1,20 @@
+# Sitemap Location
 Sitemap: https://www.localurbanfarmer.co.uk/sitemap.xml
+
+# General Rules for All Crawlers
+User-agent: *
+Disallow: /admin/          # Restrict access to admin panel
+Disallow: /scripts/        # Restrict access to scripts directory
+Disallow: /temp/           # Restrict access to temporary files
+Disallow: /private/        # Restrict access to private files
+
+# Allow Specific Pages
+Allow: /index.html         # Ensure homepage is accessible
+Allow: /shop.html          # Ensure shop page is accessible
+
+# Block Specific Crawlers (Optional)
+User-agent: BadBot
+Disallow: /
+
+# Crawl Delay (Optional)
+# Crawl-delay: 10          # Delay between requests (useful for high-traffic sites)

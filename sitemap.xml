@@ -4,59 +4,93 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- Sitemap for Local Urban Farmer -->
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>1.00</priority>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/shop.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.90</priority>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/index.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.90</priority>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/aboutus.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.85</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/services.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.85</priority>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/gallery.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/contactus.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/privacy.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.50</priority>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>https://www.localurbanfarmer.co.uk/termofuse.html</loc>
-  <lastmod>2025-05-12T20:04:53+00:00</lastmod>
-  <priority>0.50</priority>
-  <changefreq>yearly</changefreq>
-</url>
+  <!-- Sitemap for Local Urban Farmers -->
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Shop Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/shop.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.90</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Index Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/index.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.90</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/aboutus.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/services.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.85</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/gallery.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/contactus.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Advertising Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/advertising.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/privacy.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Terms of Use Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/termofuse.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Thank You Page -->
+  <url>
+    <loc>https://www.localurbanfarmer.co.uk/thankyou.html</loc>
+    <lastmod>2025-05-12T20:04:53+00:00</lastmod>
+    <priority>0.60</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

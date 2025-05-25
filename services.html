@@ -4,201 +4,192 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our Services | Local Urban Farmer</title>
+  <meta name="description" content="Discover the services offered by Local Urban Farmers, including organic produce, workshops, community gardening, and seed selling." />
+  <meta name="keywords" content="urban farming, organic produce, workshops, community gardening, seed selling, sustainability" />
+  
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!--  Viewport meta tag for responsiveness -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Your custom stylesheet (after Bootstrap) -->
-<link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Discover the services offered by Local Urban Farmers, including organic produce, workshops, and community gardening.">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="nav-placeholder"></div>
-    <!-- Navigation -->
-     <h1></h1>
+  <!-- Navigation Placeholder -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Hero Section -->
+  <header class="hero py-5 text-white text-center" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/services-bg.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h1 class="display-4">🌿 Our Services</h1>
+      <p class="lead">We provide support, education, fresh produce, and seeds to grow greener communities in Ilford.</p>
+    </div>
+  </header>
+
   <!-- Main Content -->
-  <main>
-
-    <section class="hero" style="text-align: center; padding: 2rem;">
-      <h1>🌿 Our Services</h1>
-      <p>We provide support, education, and fresh local produce to grow greener communities in Ilford.</p>
+  <main class="py-5">
+    <!-- Services List -->
+    <section class="services-list container">
+      <h2 class="text-center mb-4">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 border rounded shadow-sm">
+            <h3>🌱 Organic Farming</h3>
+            <p>We cultivate fresh vegetables and herbs using eco-friendly, pesticide-free methods right here in Ilford.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 border rounded shadow-sm">
+            <h3>👨‍🏫 Community Workshops</h3>
+            <p>Attend our hands-on workshops on composting, vertical gardening, and zero-waste practices.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 border rounded shadow-sm">
+            <h3>🧺 Weekly Produce Box</h3>
+            <p>Subscribe to a seasonal box of fresh, locally grown produce delivered straight from our allotments.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 border rounded shadow-sm">
+            <h3>🤝 School & Youth Programs</h3>
+            <p>We partner with schools to teach young people about sustainability and growing their own food.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card p-4 border rounded shadow-sm">
+            <h3>🌾 Seed Selling</h3>
+            <p>We offer high-quality seeds for home gardening, including heirloom vegetables, herbs, and flowers.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="services-list" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); padding: 2rem;">
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
-        <h3>🌱 Organic Farming</h3>
-        <p>We cultivate fresh vegetables and herbs using eco-friendly, pesticide-free methods right here in Ilford.</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
-        <h3>👨‍🏫 Community Workshops</h3>
-        <p>Attend our hands-on workshops on composting, vertical gardening, and zero-waste practices.</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
-        <h3>🧺 Weekly Produce Box</h3>
-        <p>Subscribe to a seasonal box of fresh, locally grown produce delivered straight from our allotments.</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 12px; padding: 1.5rem; background: #fff;">
-        <h3>🤝 School & Youth Programs</h3>
-        <p>We partner with schools to teach young people about sustainability and growing their own food.</p>
-      </div>
-    </section>
-    <section id="booking" style="background-color: #f9f9f9; padding: 2rem;">
-        <h2 style="text-align: center; color: #2e7d32; font-size: 2rem;">📅 Book a Visit or Service</h2>
-        <p style="text-align: center; max-width: 600px; margin: 0 auto 1.5rem;">
-          Interested in visiting our urban farm, attending a workshop, or subscribing to our produce box?
-          Fill in the form below and we’ll get back to you!
+    <!-- Seed Selling Section -->
+    <section class="seeds py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">🌾 High-Quality Seeds for Your Garden</h2>
+        <p class="text-center">
+          Start your gardening journey with our premium seeds. From heirloom vegetables to aromatic herbs and vibrant flowers, we have everything you need to grow your dream garden.
         </p>
-      
-        <form id="booking-form" style="max-width: 600px; margin: 0 auto; display: grid; gap: 1rem;">
-          <input type="text" name="name" placeholder="Your Full Name" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
-          <input type="email" name="email" placeholder="Your Email Address" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
-          
-          <select name="service" required style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;">
-            <option value="">Select a Service</option>
-            <option value="Visit the farm">Visit the farm</option>
-            <option value="Join a workshop">Join a workshop</option>
-            <option value="Subscribe to produce box">Subscribe to produce box</option>
-          </select>
-      
-          <textarea name="message" rows="4" placeholder="Any special requests?" style="padding: 0.75rem; border-radius: 8px; border: 1px solid #ccc;"></textarea>
-      
-          <button type="submit" style="padding: 0.75rem; background-color: #2e7d32; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
-            Submit Request
-          </button>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="images/tomato-seeds.jpg" class="card-img-top" alt="Tomato Seeds">
+              <div class="card-body">
+                <h5 class="card-title">🍅 Tomato Seeds</h5>
+                <p class="card-text">Grow juicy, flavorful tomatoes in your backyard or balcony.</p>
+                <a href="shop.html" class="btn btn-success">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="images/basil-seeds.jpg" class="card-img-top" alt="Basil Seeds">
+              <div class="card-body">
+                <h5 class="card-title">🌿 Basil Seeds</h5>
+                <p class="card-text">Add fresh, aromatic basil to your meals with ease.</p>
+                <a href="shop.html" class="btn btn-success">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="images/sunflower-seeds.jpg" class="card-img-top" alt="Sunflower Seeds">
+              <div class="card-body">
+                <h5 class="card-title">🌻 Sunflower Seeds</h5>
+                <p class="card-text">Brighten your garden with these cheerful sunflowers.</p>
+                <a href="shop.html" class="btn btn-success">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4" style="color: #2e7d32;">📅 Book a Visit or Service</h2>
+        <p class="text-center mb-4">Interested in visiting our urban farm, attending a workshop, or subscribing to our produce box? Fill in the form below and we’ll get back to you!</p>
+        
+        <form id="booking-form" class="mx-auto" style="max-width: 600px;">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Your Full Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email Address" required>
+          </div>
+          <div class="mb-3">
+            <label for="service" class="form-label">Select a Service</label>
+            <select name="service" id="service" class="form-select" required>
+              <option value="">Select a Service</option>
+              <option value="Visit the farm">Visit the farm</option>
+              <option value="Join a workshop">Join a workshop</option>
+              <option value="Subscribe to produce box">Subscribe to produce box</option>
+              <option value="Buy seeds">Buy seeds</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Special Requests</label>
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Any special requests?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Submit Request</button>
         </form>
-      
-        <div id="confirmation-message" style="display: none; text-align: center; margin-top: 1rem; color: #2e7d32;">
+
+        <div id="confirmation-message" class="text-center mt-3 text-success" style="display: none;">
           ✅ Thank you! We'll be in touch soon.
         </div>
-      </section>
-      
+      </div>
+    </section>
   </main>
 
-  
+  <!-- Footer Placeholder -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-about">
-        <h2>Local Urban Farmers</h2>
-        <p>Empowering communities through sustainable urban farming and self-care practices.</p>
-        
-      </div>
-  
-      <div class="footer-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contactus.html">Contact</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-column">
-        <h4>Contact Us</h4>
-        <div id class="footer-socials">
-          <a href="https://www.instagram.com/local_urban_farmer"><img src="Image/Instagram-Icon--Streamline-Svg-Logos.png" alt="Instagram"></a>
-          <a href="https://www.facebook.com/profile.php?id=61574070733800"><img src="Image/Facebook--Streamline-Svg-Logos.png" alt="Facebook"></a>
-          <a href="https://youtube.com/@localurbanfarmers"><img src="Image/Youtube--Streamline-Ios-14.png" alt="YouTube"></a>
-          <a href="http://tiktok.com/@local.urban.farmers"><img src="Image/Tiktok--Streamline-Ios-14.png" alt="TikTok"></a>
-          <a href="#"><img src="Image/X-Twitter-Logo--Streamline-Flex-Remix.png" alt="Twitter"></a>
-        </div>
-  
-      <div class="footer-newsletter">
-        <h3>Newsletter</h3>
-        <form action="https://script.google.com/macros/s/AKfycbzFPxonTMdFEbtGWiYQn5UhGpR2nzVmXBPn3gVxmE2XTUT0MXSKFNOAbt88EAFEEAPD/exec" method="POST"></form>
-        <p>Subscribe to our newsletter for updates and tips.</p>
-        <input type="email" placeholder="Your email address">
-        <button>Subscribe</button>
-      </div>
-    </div>
- <!-- Cookie Consent Modal -->
-<div id="cookie-modal" class="cookie-modal">
-  <div class="cookie-box">
-    <h3>Cookie Preferences</h3>
-    <p>We use cookies to enhance your experience. You can choose which types to accept.</p>
-
-    <form id="cookie-preferences">
-      <label>
-        <input type="checkbox" name="essential" checked disabled>
-        Essential Cookies (Always active)
-      </label><br>
-
-      <label>
-        <input type="checkbox" name="analytics">
-        Analytics Cookies
-      </label><br>
-
-      <label>
-        <input type="checkbox" name="marketing">
-        Marketing Cookies
-      </label><br><br>
-
-      <button type="submit">Save Preferences</button>
-    </form>
-  </div>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('cookie-modal');
-    const preferences = localStorage.getItem('cookiePreferences');
-
-    if (!preferences) {
-      modal.style.display = 'flex';
-    }
-
-    document.getElementById('cookie-preferences').addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const selected = {
-        essential: true, // always true
-        analytics: this.analytics.checked,
-        marketing: this.marketing.checked
-      };
-
-      localStorage.setItem('cookiePreferences', JSON.stringify(selected));
-      modal.style.display = 'none';
-
-      // Optional: Initialize scripts based on preference
-      if (selected.analytics) {
-        console.log("Analytics script would be loaded.");
-      }
-      if (selected.marketing) {
-        console.log("Marketing script would be loaded.");
-      }
-    });
-  });
-</script>
-
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="termofuse.html">Terms of Use</a>
-  </div>
-
-
-    <div class="footer-bottom">
-      © 2025 Local Urban Farmers. All rights reserved.
-    </div>
+    <div id="footer-placeholder"></div>
   </footer>
-  
+
+  <!-- JavaScript to Load Navigation and Footer -->
+  <script>
+    // Dynamically load the navigation
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+
+    // Dynamically load the footer
+    fetch("footer.html")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to load footer.");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading footer:", error));
+  </script>
+
+  <!-- Booking Form Submission -->
   <script>
     const form = document.getElementById("booking-form");
     const confirmation = document.getElementById("confirmation-message");
-  
+
     form.addEventListener("submit", function(e) {
       e.preventDefault();
-  
+
       const data = {
         name: form.name.value,
         email: form.email.value,
         service: form.service.value,
         message: form.message.value
       };
-  
-      fetch("PASTE_YOUR_WEB_APP_URL_HEREhttps://script.google.com/macros/s/AKfycbw5xt3e9aG1h5zGARwaQsZHCC3pNh0AFJyk5mURXuq-ovpVSxkbM_CxuQAZc122yXwj/exec", {
+
+      fetch("https://script.google.com/macros/s/AKfycbw5xt3e9aG1h5zGARwaQsZHCC3pNh0AFJyk5mURXuq-ovpVSxkbM_CxuQAZc122yXwj/exec", {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" }
@@ -213,16 +204,8 @@
       });
     });
   </script>
-  <div id="nav-placeholder"></div>
-  <script>
-    fetch("nav.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      })
-      .catch(error => console.error("Error loading navigation:", error));
-  </script>
-  <!--  Bootstrap JS Bundle (includes Popper for dropdowns) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
