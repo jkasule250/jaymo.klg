@@ -1,0 +1,13 @@
+
+    <!-- Behind the Scene -->
+    <section>
+      <h2 data-aos="fade-down">🎬 Behind the Scene</h2>
+      <div class="gallery-grid">
+        <a href="Image/behind1.jpg" data-lightbox="behind-the-scene" data-title="Preparing for a workshop">
+          <img src="Image/behind1.jpg" alt="Preparing for a workshop" />
+        </a>
+        <a href="Image/behind2.jpg" data-lightbox="behind-the-scene" data-title="Setting up the farm stand">
+          <img src="Image/behind2.jpg" alt="Setting up the farm stand" />
+        </a>
+      </div>
+    </section>
