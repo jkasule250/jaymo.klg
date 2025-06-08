@@ -66,12 +66,13 @@ Join us in making a difference, one seed at a time! 🌍
 ## 📌 Follow Us
 
 Stay connected and follow our journey:  
+
 - 🌐 [Website](https://www.localurbanfarmer.co.uk)  
 - 📸 [Instagram](https://www.instagram.com/local_urban_farmer)  
 - 📘 [Facebook](https://www.facebook.com/profile.php?id=61574070733800)  
 - 🎥 [YouTube](https://youtube.com/@localurbanfarmers)  
 - 🎵 [TikTok](http://tiktok.com/@local.urban.farmers)  
-- 🐦 [Twitter](#)
+- 🐦 [Twitter](https://twitter.com/localurbanfarmers)  
 
 ---
 

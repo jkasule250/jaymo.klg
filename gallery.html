@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gallery | Local Urban Farmers</title>
-  <meta name="description" content="Explore our gallery showcasing moments from our urban farm, including community gardening, fresh produce, workshops, and local events." />
-  <meta name="keywords" content="urban farming, gallery, community gardening, fresh produce, workshops, local events" />
+  <meta name="description" content="Explore our gallery showcasing moments from our urban farm, categorized into planting, harvesting, workshops, and more." />
+  <meta name="keywords" content="urban farming, gallery, planting, harvesting, workshops, volunteers, kids, nature" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -55,29 +55,68 @@
       max-width: 600px;
       margin: auto;
     }
-
-    /* Testimonial Section */
-    .testimonials {
-      background: #f9f9f9;
-      padding: 4rem 2rem;
+    /* Social Media Links */
+    .social-media {
       text-align: center;
+      margin: 2rem 0;
     }
 
-    .testimonial {
-      margin: 1rem auto;
-      max-width: 600px;
-      font-style: italic;
-      color: #555;
-    }
-
-    .testimonial h4 {
-      margin-top: 1rem;
-      font-weight: bold;
+    .social-media a {
+      margin: 0 10px;
+      display: inline-block;
       color: #4caf50;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .social-icons img {
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Call-to-Action Styling */
+    .cta {
+      background: #4caf50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 8px;
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+
+    .cta h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cta a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      background: #388e3c;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #2e7d32;
     }
   </style>
 </head>
 <body>
+  <a href="#main-content" class="visually-hidden-focusable">Skip to Content</a>
+
   <!-- Navigation Placeholder -->
   <div id="nav-placeholder"></div>
 
@@ -89,53 +128,158 @@
     </div>
   </header>
 
-  <!-- Gallery Intro Section -->
-  <section>
-    <h2 data-aos="fade-down">🌱 Our Story Through Pictures</h2>
-    <p data-aos="fade-up">
-      Each image tells a part of our journey — from planting seeds to building a stronger community.
-      Explore moments from our farm, local events, and daily life at Local Urban Farmers.
-    </p>
-  </section>
+  <!-- Gallery Categories -->
+  <main id="main-content">
+    <!-- Planting and Growing -->
+    <section>
+      <h2 data-aos="fade-down">🌱 Planting and Growing</h2>
+      <div class="gallery-grid">
+        <a href="Image/plant seeds.jpg" data-lightbox="planting" data-title="Planting seeds in the garden">
+          <img src="Image/plant seeds.jpg" alt="Planting seeds in the garden" />
+        </a>
+        <a href="Image/planting2.jpg" data-lightbox="planting" data-title="Young plants sprouting">
+          <img src="Image/young plant spouts.JPG" alt="Young plants sprouting" />
+        </a>
+      </div>
+    </section>
 
-  <!-- Gallery Grid -->
-  <section class="gallery-grid">
-    <a href="Image/IMG_1233.jpg" data-lightbox="urban-farm" data-title="Farmers working in urban garden">
-      <img src="Image/IMG_1233.jpg" alt="Farmers working in urban garden" data-aos="fade-up" />
-    </a>
-    <a href="Image/IMG_6669.JPG" data-lightbox="urban-farm" data-title="Fresh harvested produce">
-      <img src="Image/IMG_6669.JPG" alt="Fresh harvested produce" data-aos="fade-up" />
-    </a>
-    <a href="Image/IMG_6686.JPG" data-lightbox="urban-farm" data-title="Volunteers at the farm">
-      <img src="Image/IMG_6686.JPG" alt="Volunteers at the farm" data-aos="fade-up" />
-    </a>
-    <a href="Image/IMG_6666.JPG" data-lightbox="urban-farm" data-title="Gardening workshop in progress">
-      <img src="Image/IMG_6666.JPG" alt="Gardening workshop in progress" data-aos="fade-up" />
-    </a>
-    <a href="Image/IMG_6681.JPG" data-lightbox="urban-farm" data-title="School visit to the farm">
-      <img src="Image/IMG_6681.JPG" alt="School visit to the farm" data-aos="fade-up" />
-    </a>
-    <a href="Image/IMG_6691.JPG" data-lightbox="urban-farm" data-title="Produce market stand">
-      <img src="Image/IMG_6691.JPG" alt="Produce market stand" data-aos="fade-up" />
-    </a>
-    <a href="Image/IMG_6684.JPG" data-lightbox="urban-farm" data-title="Community gardening event">
-      <img src="Image/IMG_6684.JPG" alt="Community gardening event" data-aos="fade-up" />
-    </a>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>🌟 What Our Community Says</h2>
-    <div class="testimonial" data-aos="fade-up">
-      <p>"The Local Urban Farmers gallery inspires me to start my own garden. The photos capture the essence of community and sustainability."</p>
-      <h4>- Sarah, Community Member</h4>
+    <!-- Call-to-Action: Join a Workshop -->
+    <div class="cta">
+      <h2>🌟 Join a Workshop Today!</h2>
+      <p>Learn hands-on skills in gardening, composting, and sustainable farming. Our workshops are open to everyone!</p>
+      <a href="workshop.html">Sign Up for a Workshop</a>
     </div>
-    <div class="testimonial" data-aos="fade-up">
-      <p>"Seeing the vibrant produce and happy faces in the gallery reminds me of the importance of local farming."</p>
-      <h4>- James, Workshop Participant</h4>
-    </div>
-  </section>
 
+    <!-- Harvesting Time -->
+    <section>
+      <h2 data-aos="fade-down">🌾 Harvesting Time</h2>
+      <div class="gallery-grid">
+        <a href="Image/harvest1.jpg" data-lightbox="harvesting" data-title="Freshly harvested vegetables">
+          <img src="Image/fresh tomatoes.jpg" alt="Freshly harvested tomatoes" />
+        </a>
+        <a href="Image/harvest2.jpg" data-lightbox="harvesting" data-title="strawberries ready for Consumption">
+          <img src="Image/ready strawberries.jpg" alt="Ready strawberries" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Call-to-Action: Visit Us -->
+    <div class="cta">
+      <h2>🌿 Visit Our Farm!</h2>
+      <p>Experience the beauty of urban farming firsthand. Take a tour, meet our team, and see how we grow fresh produce sustainably.</p>
+      <a href="contactus.html">Plan Your Visit</a>
+    </div>
+
+    <!-- Workshops and Events -->
+    <section>
+      <h2 data-aos="fade-down">👩‍🏫 Workshops and Events</h2>
+      <div class="gallery-grid">
+        <a href="Image/workshop1.jpg" data-lightbox="workshops" data-title="Gardening workshop in progress">
+          <img src="Image/community workshop.JPG " alt="Gardening workshop in progress" />
+        </a>
+        <a href="Image/event1.jpg" data-lightbox="workshops" data-title="Community planting day">
+          <img src="Image/community planting day.JPG" alt="Community planting day" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Volunteers in Action -->
+    <section>
+      <h2 data-aos="fade-down">🤝 Volunteers in Action</h2>
+      <div class="gallery-grid">
+        <a href="Image/volunteer1.jpg" data-lightbox="volunteers" data-title="Volunteers preparing the soil">
+          <img src="Image/IMG_6686.JPG" alt="Volunteers preparing the soil" />
+        </a>
+        <a href="Image/volunteer2.jpg" data-lightbox="volunteers" data-title="Teamwork in the garden">
+          <img src="Image/IMG_6688.JPG" alt="Teamwork in the garden" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Before and After -->
+    <section>
+      <h2 data-aos="fade-down">🔄 Before and After</h2>
+      <div class="gallery-grid">
+        <a href="Image/before.jpg" data-lightbox="before-after" data-title="Before: Overgrown garden">
+          <img src="Image/IMG_6688.JPG" alt="Before: Overgrown garden" />
+        </a>
+        <a href="Image/after.jpg" data-lightbox="before-after" data-title="After: Beautifully cultivated garden">
+          <img src="Image/IMG_6666.JPG" alt="After: Beautifully cultivated garden" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Kids and Family -->
+    <section>
+      <h2 data-aos="fade-down">👨‍👩‍👧‍👦 Kids and Family</h2>
+      <div class="gallery-grid">
+        <a href="Image/kids1.jpg" data-lightbox="kids-family" data-title="Kids learning about plants">
+          <img src="Image/IMG_6681.JPG" alt="Kids learning about plants" />
+        </a>
+        <a href="Image/family1.jpg" data-lightbox="kids-family" data-title="Family enjoying a farm tour">
+          <img src="Image/IMG_6691.JPG" alt="Family enjoying a farm tour" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Season Highlights -->
+    <section>
+      <h2 data-aos="fade-down">🌟 Season Highlights</h2>
+      <div class="gallery-grid">
+        <a href="Image/Spring blossom.jpg" data-lightbox="season-highlights" data-title="Spring blossoms">
+          <img src="Image/Spring blossom.jpg" alt="Spring blossoms" />
+        </a>
+        <a href="Image/season2.jpg" data-lightbox="season-highlights" data-title="Autumn harvest">
+          <img src="Image/AUTUM HARVEST.jpg" alt="Autumn harvest" />
+        </a>
+      </div>
+    </section>
+     
+    <!-- Wildlife and Nature -->
+    <section>
+      <h2 data-aos="fade-down">🦋 Wildlife and Nature</h2>
+      <div class="gallery-grid">
+        <a href="Image/wildlife1.jpg" data-lightbox="wildlife" data-title="Butterflies in the garden">
+          <img src="Image/butterflies in the garden.jpg" alt="Butterflies in the garden" />
+        </a>
+        <a href="Image/wildlife2.jpg" data-lightbox="wildlife" data-title="Birds nesting in the trees">
+          <img src="Image/birds on the tree.jpg" alt="Birds on the trees" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Behind the Scene -->
+    <section>
+      <h2 data-aos="fade-down">🎬 Behind the Scene</h2>
+      <div class="gallery-grid">
+        <a href="Image/behind1.jpg" data-lightbox="behind-the-scene" data-title="Preparing for a workshop">
+          <img src="Image/behind1.jpg" alt="Preparing for a workshop" />
+        </a>
+        <a href="Image/behind2.jpg" data-lightbox="behind-the-scene" data-title="Setting up the farm stand">
+          <img src="Image/behind2.jpg" alt="Setting up the farm stand" />
+        </a>
+      </div>
+    </section>
+  </main>
+ <!-- Social Media Links -->
+ <div class="social-media">
+  <h2>🌐 Follow Us on Social Media</h2>
+  <p>Stay connected and share your favorite moments from our gallery!</p>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/local_urban_farmer" target="_blank" aria-label="Instagram">
+      <img src="Image/Instagram-Icon--Streamline-Svg-Logos.png" alt="Instagram" width="40" height="40" />
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61574070733800" target="_blank" aria-label="Facebook">
+      <img src="Image/Facebook--Streamline-Svg-Logos.png" alt="Facebook" width="40" height="40" />
+    </a>
+    <a href="https://youtube.com/@localurbanfarmers" target="_blank" aria-label="YouTube">
+      <img src="Image/Youtube--Streamline-Ios-14.png" alt="YouTube" width="40" height="40" />
+    </a>
+    <a href="https://tiktok.com/@local.urban.farmers" target="_blank" aria-label="TikTok">
+      <img src="Image/Tiktok--Streamline-Ios-14.png" alt="TikTok" width="40" height="40" />
+    </a>
+  </div>
+</div>
   <!-- Footer Placeholder -->
   <footer class="footer">
     <div id="footer-placeholder"></div>

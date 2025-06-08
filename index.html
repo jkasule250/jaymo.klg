@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main-content" class="visually-hidden-focusable">Skip to Content</a>
+
   <!-- Navigation Placeholder -->
   <div id="nav-placeholder"></div>
 
@@ -21,7 +23,7 @@
   <header class="hero animated-hero">
     <div class="container text-center text-white">
       <h1 class="display-4">Local Urban Farmer</h1>
-      <p class="lead tagline">Fresh Produce. Healthy Communities. Green Future.</p>
+      <p class="lead tagline" style="color: aqua;"> Sustainability. Innovation. Community-Driven.</p>
       <div class="hero-buttons mt-4">
         <a href="contactus.html" class="btn btn-success btn-lg me-3">Contact Us</a>
         <a href="aboutus.html" class="btn btn-outline-light btn-lg">Learn More</a>
@@ -33,7 +35,7 @@
   <!-- About Section -->
   <section class="about py-5">
     <div class="container text-center">
-      <h2 class="mb-4">Who We Are</h2>
+      <h2 class="mb-4" style="color:#2e7d32">Who We Are</h2>
       <p>We are a small team of passionate growers transforming city spaces into thriving food gardens. Local Urban Farmer began with a goal to bring fresh, local produce to our neighbors and build a greener community.</p>
     </div>
   </section>
@@ -41,13 +43,37 @@
   <!-- Services Section -->
   <section class="services py-5 bg-light">
     <div class="container text-center">
-      <h2 class="mb-4">What We Do</h2>
+      <h2 class="mb-4" style="color:#2e7d32">What We Do</h2>
       <ul class="list-unstyled">
         <li>🌿 Host gardening & composting workshops</li>
         <li>🌽 Grow seasonal fruits & vegetables</li>
         <li>🌎 Promote urban sustainability</li>
         <li>🤝 Collaborate with restaurants & schools</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Gallery Preview Section -->
+  <section class="gallery-preview py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4" style="color:#2e7d32">📸 Urban Farm Highlights</h2>
+      <p class="mb-4">Take a glimpse into our urban farm and see how we’re transforming spaces into thriving gardens.</p>
+      <div class="gallery-grid">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="Image/IMG_6689.JPG" alt="Planting seeds in the garden" class="img-fluid rounded shadow-sm">
+          </div>
+          <div class="col-md-4">
+            <img src="Image/IMG_6687.JPG" alt="Local urban farmer's volunteers" class="img-fluid rounded shadow-sm">
+          </div>
+          <div class="col-md-4">
+            <img src="Image/20250513_175931.jpg" alt="Gardening workshop in progress" class="img-fluid rounded shadow-sm">
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <a href="gallery.html" class="btn btn-success btn-lg">View More</a>
+      </div>
     </div>
   </section>
 
@@ -71,23 +97,55 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Get In Touch</h2>
-      <p class="mb-4">We’d love to hear from you! Connect with us on social media or send us a message directly.</p>
-      <div class="social-links d-flex justify-content-center mb-4">
-        <a href="https://www.instagram.com/local_urban_farmer" target="_blank" aria-label="Instagram" class="social-link mx-2">
-          <img src="Image/Instagram--Streamline-Ios-14.png" alt="Instagram Icon" width="40" height="40">
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61574070733800" target="_blank" aria-label="Facebook" class="social-link mx-2">
-          <img src="Image/Facebook--Streamline-Ios-14.png" alt="Facebook Icon" width="40" height="40">
-        </a>
-        <a href="https://youtube.com/@localurbanfarmers" target="_blank" aria-label="YouTube" class="social-link mx-2">
-          <img src="Image/Youtube--Streamline-Ios-14.png" alt="YouTube Icon" width="40" height="40">
-        </a>
-        <a href="http://tiktok.com/@local.urban.farmers" target="_blank" aria-label="TikTok" class="social-link mx-2">
-          <img src="Image/Tiktok--Streamline-Ios-14.png" alt="TikTok Icon" width="40" height="40">
-        </a>
+  <section class="contact py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Get In Touch</h2>
+      <p class="text-center mb-4">We’d love to hear from you! Fill out the form below or connect with us on social media.</p>
+      
+      <!-- Social Media Links -->
+      <div class="text-center mb-4">
+        <p>Follow us on:</p>
+          <a href="https://www.instagram.com/local_urban_farmer" target="_blank" aria-label="Instagram">
+            <img src="Image/Instagram-Icon--Streamline-Svg-Logos.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61574070733800" target="_blank" aria-label="Facebook">
+            <img src="Image/Facebook--Streamline-Svg-Logos.png" alt="Facebook">
+          </a>
+          <a href="https://youtube.com/@localurbanfarmers" target="_blank" aria-label="YouTube">
+            <img src="Image/Youtube--Streamline-Ios-14.png" alt="YouTube">
+          </a>
+          <a href="http://tiktok.com/@local.urban.farmers" target="_blank" aria-label="TikTok">
+            <img src="Image/Tiktok--Streamline-Ios-14.png" alt="TikTok">
+          </a>
+          <a href="https://twitter.com/localurbanfarmers" target="_blank" aria-label="Twitter">
+            <img src="Image/X-Twitter-Logo--Streamline-Flex-Remix.png" alt="Twitter">
+          </a>
+        </div>
+      <!-- Contact Form -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="https://formspree.io/f/your-form-id" method="POST" class="p-4 border rounded shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>

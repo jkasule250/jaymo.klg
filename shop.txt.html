@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Urban Shop - Coming Soon!</title>
+  <meta name="description" content="The Local Urban Shop is coming soon! Stay tuned for fresh produce, seeds, eco-friendly products, and more.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<style>
+   .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: disc;
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+      text-align: left;
+    }
+
+    a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      align-items: center;
+    }
+    .social-links img {
+        align-items: center;
+    }
+</style>
+<!-- Navigation Placeholder -->
+<div id="nav-placeholder"></div>
+<body>
+  <div class="container">
+    <h1>🌿 Local Urban Shop - Coming Soon! 🌿</h1>
+    <p>We are excited to announce that the Local Urban Shop will be opening soon!</p>
+    <p>Get ready to explore a wide range of products, including:</p>
+    <ul>
+      <li>Fresh, organic produce</li>
+      <li>High-quality seeds for your garden</li>
+      <li>Eco-friendly products</li>
+    </ul>
+    <p>Stay tuned for updates and the official launch date.</p>
+    <p>Follow us on social media to be the first to know when we go live:</p>
+    <div class="social-links">
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/local_urban_farmer" target="_blank" aria-label="Instagram">
+              <img src="Image/Instagram-Icon--Streamline-Svg-Logos.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61574070733800" target="_blank" aria-label="Facebook">
+              <img src="Image/Facebook--Streamline-Svg-Logos.png" alt="Facebook">
+            </a>
+            <a href="https://youtube.com/@localurbanfarmers" target="_blank" aria-label="YouTube">
+              <img src="Image/Youtube--Streamline-Ios-14.png" alt="YouTube">
+            </a>
+            <a href="http://tiktok.com/@local.urban.farmers" target="_blank" aria-label="TikTok">
+              <img src="Image/Tiktok--Streamline-Ios-14.png" alt="TikTok">
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter">
+              <img src="Image/X-Twitter-Logo--Streamline-Flex-Remix.png" alt="Twitter">
+            </a>
+          </div>
+    </div>
+    <p>Thank you for your support as we grow greener communities together!</p>
+    <p>🌱 <strong>Local Urban Farmers</strong> 🌱</p>
+  </div>
+  <div id="footer-placeholder"></div>
+  <script>
+    // Dynamically load the navigation
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+
+    // Dynamically load the footer
+    fetch("footer.html")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to load footer.");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading footer:", error));
+  </script>
+</body>
+</html>
