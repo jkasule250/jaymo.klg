@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to start urban farming and transform your city space into a thriving garden.">
+  <meta name="keywords" content="urban farming, gardening, sustainability, city farming">
+  <title>Seasonal Planting Techniques</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <a href="#main-content" class="visually-hidden-focusable">Skip to Content</a>
+  <header class="hero" style="background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('images/farm-bg.jpg') center/cover no-repeat;">
+    <div class="container text-center text-white">
+      <h1 class="display-4">Seasonal Planting Techniques</h1>
+      <p class="lead">Maximize your harvest with seasonal planting strategies!</p>
+    </div>
+  </header>
+  <section id="blog-post-3" class="mt-5">
+    <h2 style="color:#2e7d32 ;">Seasonal Planting Techniques</h2>
+    <p>Seasonal planting is the art of growing crops that thrive during specific times of the year. By aligning your planting schedule with the seasons, you can maximize yields and ensure healthy growth. Spring is ideal for planting fast-growing crops like lettuce, spinach, and radishes, as the mild temperatures encourage rapid development. Summer is perfect for heat-loving plants such as tomatoes, peppers, and cucumbers, which thrive in longer days and warmer weather.</p>
+    <p>As autumn approaches, focus on cool-season crops like kale, broccoli, and carrots, which benefit from the cooler temperatures. Winter planting, in regions with mild climates, can include hardy greens like chard and winter lettuce. Seasonal planting also involves understanding your local climate and frost dates. Use tools like planting calendars and soil thermometers to determine the best time to sow seeds. Additionally, crop rotation and companion planting can enhance soil health and deter pests. By embracing seasonal planting techniques, you can enjoy a continuous harvest throughout the year while promoting sustainable gardening practices. Plan ahead, experiment with new crops, and make the most of each season's unique opportunities.</p>
+  </section>
+
+  <section class="related-posts mt-5">
+    <h2>Related Posts</h2>
+    <ul>
+      <li><a href="blog-post-2.html">Composting 101: A Beginner's Guide</a></li>
+      <li><a href="blog-post-1.html">Urban Farming Basics</a></li>
+    </ul>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Removed duplicate jQuery script -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>   
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+    // Dynamically load the navigation
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+
+    // Dynamically load the footer
+    fetch("footer.html")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to load footer.");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading footer:", error));
+  </script>
+</body>
+</html>

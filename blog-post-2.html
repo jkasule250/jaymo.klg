@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composting 101: A Beginner's Guide</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+ <div id="nav-placeholder"></div>
+  <header class="hero" style="background: 
+  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  url('images/farm-bg.jpg') center/cover no-repeat;">
+  <div class="container text-center text-white">
+    <h1 class="display-4" style="color:aliceblue">Composting 101: A Beginner's Guide</h1>
+    <p class="lead">Maximize your harvest with seasonal planting strategies!</p>
+  </div>
+</header>
+  <section id="blog-post-2" class="mt-5">
+    <h2 class="text-center mb-4" style="color:#2e7d32 ;">Composting 101: A Beginner's Guide</h2>
+    <p>Composting is a simple yet powerful way to recycle organic waste and enrich your soil. As a beginner, understanding the basics of composting can help you turn kitchen scraps and yard waste into nutrient-rich compost for your garden. Composting begins with the right balance of "greens" and "browns." Greens include items like fruit peels, vegetable scraps, and coffee grounds, which provide nitrogen. Browns, such as dried leaves, cardboard, and straw, add carbon to the mix. A proper balance ensures efficient decomposition and prevents unpleasant odors.</p>
+    <p>Choose a composting method that suits your space and lifestyle. Options include outdoor compost bins, tumblers, or even indoor vermicomposting with worms. Regularly aerate your compost pile to maintain oxygen levels, which are essential for microbial activity. Over time, the organic materials break down into dark, crumbly compost that can be used to improve soil structure, retain moisture, and boost plant growth. Composting not only reduces waste but also minimizes the need for chemical fertilizers, making it an eco-friendly practice. Start composting today and contribute to a sustainable future while enriching your garden with nature's best fertilizer.</p>
+  </section>
+
+  <section class="related-posts mt-5">
+    <h2>Related Posts</h2>
+    <ul>
+      <li><a href="blog-post-2.html">Composting 101: A Beginner's Guide</a></li>
+      <li><a href="blog-post-3.html">Seasonal Planting Techniques</a></li>
+    </ul>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>   
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Dynamically load the navigation
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+  
+    // Dynamically load the footer
+    fetch("footer.html")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to load footer.");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading footer:", error));
+  </script>
+  
+  </body>
+  </html>
