@@ -810,3 +810,11 @@ lightbox {
   max-width: 90%;
   max-height: 90%;
 }
+.hover-animate {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-animate:hover {
+  color: #28a745; /* Green color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
