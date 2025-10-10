@@ -13,7 +13,7 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body style="background-color:#85bd89;">
   <a href="#main-content" class="visually-hidden-focusable">Skip to Content</a>
 
   <!-- Navigation Placeholder -->
@@ -22,18 +22,20 @@
   <!-- Hero Section -->
   <header class="hero py-5 text-white text-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/shop-hero.jpg') center/cover no-repeat;">
     <div class="container">
-      <h1 class="display-4">🛒 Shop Local Produce</h1>
+      <h1 class="display-4" >🛒 Shop Local Produce</h1>
       <p class="lead">Fresh, organic, and locally grown produce delivered to your doorstep.</p>
     </div>
   </header>
 
   <!-- Product Grid Section -->
+  
   <main id="main-content" class="shop-section py-5">
+  <section class="products" style =max-width:800px; margin:auto;>
     <div class="container">
       <h2 class="text-center mb-4">Our Products</h2>
       <div class="product-grid row g-4">
-        <!-- Example Product Card -->
-        <div class="col-md-4">
+        <!-- Product Card -->
+        <div class="row g-4">
           <div class="product-card p-3 border rounded shadow-sm">
             <img src="Image/fresh tomatoes 2.jpg" alt="Fresh Tomatoes" class="img-fluid rounded">
             <h3 class="mt-3">Tomatoes</h3>
@@ -41,7 +43,7 @@
             <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="row g-4">
           <div class="product-card p-3 border rounded shadow-sm">
             <img src="Image/carrotes image.jpg" alt="Fresh Carrots" class="img-fluid rounded">
             <h3 class="mt-3">Carrots</h3>
@@ -49,7 +51,7 @@
             <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="row g-4">
           <div class="product-card p-3 border rounded shadow-sm">
             <img src="Image/lettuce.jpg" alt="Fresh Lettuce" class="img-fluid rounded">
             <h3 class="mt-3">Lettuce</h3>
@@ -60,6 +62,7 @@
         <!-- Add more products as needed -->
       </div>
     </div>
+  </section>
   </main>
 
   <!-- Seed Selling Section -->
@@ -105,22 +108,22 @@
   <!-- Contact Section -->
   <section class="contact py-5">
     <div class="container text-center">
-      <h2 class="mb-4">Get In Touch</h2>
+      <h2 class="mb-4" style="color: #4caf50;">Get In Touch</h2>
       <p class="mb-4">Have questions about our products or services? Reach out to us, and we’ll be happy to assist you!</p>
       <form id="contactForm" class="contact-form mx-auto" style="max-width: 600px;">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name:</label>
-          <input type="text" id="name" name="name" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email:</label>
-          <input type="email" id="email" name="email" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message:</label>
-          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success w-100">Send Message</button>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="comment" name="comment" rows="5" placeholder="Write your comment here" required></textarea>
+        <div class="invalid-feedback">Please write a comment.</div>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Submit</button>
       </form>
     </div>
   </section>

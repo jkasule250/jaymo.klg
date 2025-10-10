@@ -330,6 +330,10 @@
     padding: 0;
     padding: 20px;
   }
+  /* Set the background color for the body */
+body {
+  background-color: #85bd89;
+}
   nav {
     display: block;
     justify-content: space-between;
@@ -427,7 +431,7 @@
   .product-card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(10, 34, 4, 0.85);
     padding: 1em;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -818,3 +822,4 @@ lightbox {
   color: #28a745; /* Green color on hover */
   transform: scale(1.1); /* Slight zoom effect */
 }
+
